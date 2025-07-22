@@ -28,10 +28,10 @@
 
         base_layer {
             bindings = <
-       &none  &none  &kp ESCAPE  &none  &none    &none  &none  &none  &none  &none
-       &none  &none  &kp E       &kp U  &none    &none  &kp H  &kp T  &none  &none
-&none  &none  &none  &none       &none  &none    &none  &none  &none  &none  &none  &none
-                     &none       &none  &none    &none  &none  &none
+       &none       &none       &kp ESCAPE  &kp y       &none           &none  &none       &none       &none       &none
+       &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H  &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
+&none  &none       &none       &none       &none       &none           &none  &none       &none       &none       &none       &none
+                               &none       &none       &none           &none  &none       &none
             >;
         };
 
