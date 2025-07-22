@@ -12,7 +12,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        /*
+        base_layer {
+/*
 
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     | ESC |  p  |  y  |      |  f  |  g  |  c  |  r  |  l  |
@@ -25,8 +26,6 @@
                          |     | BSP | SPA |      | ENT | _|$ |  #  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
-
-        base_layer {
             bindings = <
        &none       &none       &kp ESCAPE  &kp Y       &none           &kp F      &kp G       &kp C       &kp R       &kp L
        &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H      &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
@@ -36,16 +35,7 @@
         };
 
         symbols {
-            bindings = <
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
-                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
-        };
-
-        /*
-Symbols
-
+/*
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |  ;  |  %  |  *  |  @  |  -  |      |  /  |  {  |  '  |  `  |  }  |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -56,8 +46,15 @@ Symbols
                          |  _  | SFT |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+            bindings = <
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
+                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
+        };
+
+        spaces {
         /*
-Spaces
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |  F2 | F12 | F3  | CT0 |PRINT|      | ZIN | RUN | ←[  |  ]→ |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -68,8 +65,15 @@ Spaces
                          |  _  | SFT |  _  |      |  _  | SFT |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+            bindings = <
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
+                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
+        };
+
+        numbers {
         /*
-Numpad
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     |     |     |     |      |     |     |     |     |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -80,5 +84,11 @@ Numpad
                          |  _  |  _  |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+                    bindings = <
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
+                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
+        };
     };
 };
