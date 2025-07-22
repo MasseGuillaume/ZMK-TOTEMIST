@@ -37,11 +37,10 @@
 
         symbols {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
+&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
+                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
         };
 
         /*
