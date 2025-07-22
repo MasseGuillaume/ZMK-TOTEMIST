@@ -1,23 +1,18 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
-
 
 &mt {
-  quick-tap-ms = <100>;
-  global-quick-tap;
-  flavor = "tap-preferred";
-  tapping-term-ms = <170>;
+    quick-tap-ms = <100>;
+    global-quick-tap;
+    flavor = "tap-preferred";
+    tapping-term-ms = <170>;
 };
-
-#define BASE 0
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-/*
+        /*
 
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     | ESC |  p  |  y  |      |  f  |  g  |  c  |  r  |  l  |
@@ -30,16 +25,26 @@
                          |     | BSP | SPA |      | ENT | _|$ |  #  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+
         base_layer {
             bindings = <
-        &none       &none       &kp ESCAPE  &kp P       &kp Y           &kp F  &kp G        &kp C        &kp R       &kp L
-        &mt LGUI A  &mt LALT O  &mt LCTRL E &mt LSHFT U &kp I           &kp D  &mt RSHFT H  &mt RCTRL T  &mt RALT N  &mt RGUI S
-&none   &kp TAB     &kp Q       &kp j       &kp K       &kp X           &kp B  &kp M        &kp W        &kp V       &kp Z       &none
-                                &none       &BSPC       &none           &kp RET  &kp SPACE  &none
+       &none  &none  &kp ESCAPE  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &kp E       &kp U  &none    &none  &kp H  &kp T  &none  &none
+&none  &none  &none  &none       &none  &none    &none  &none  &none  &none  &none  &none
+                     &none       &none  &none    &none  &none  &none
             >;
         };
 
-/*
+        symbols {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        /*
 Symbols
 
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -52,8 +57,7 @@ Symbols
                          |  _  | SFT |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
-
-/*
+        /*
 Spaces
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |  F2 | F12 | F3  | CT0 |PRINT|      | ZIN | RUN | ←[  |  ]→ |     |
@@ -65,8 +69,7 @@ Spaces
                          |  _  | SFT |  _  |      |  _  | SFT |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
-
-/*
+        /*
 Numpad
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     |     |     |     |      |     |     |     |     |     |
@@ -78,7 +81,5 @@ Numpad
                          |  _  |  _  |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
-
-
     };
 };
