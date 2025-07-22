@@ -47,10 +47,10 @@
                          +-----+-----+-----+      +-----+-----+-----+
 */
             bindings = <
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
-                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
+        &kp LS(N6)     &kp LS(N5)  &kp LS(N8)  &kp LS(N2) &kp LS(MINUS)         &kp FSLH        &kp LS(LBKT)  &kp SQT      &kp GRAVE       &kp LS(RBKT)
+        &kp LS(N3)     &kp LS(N1)  &kp COMMA   &kp DOT    &kp EQUAL             &kp LS(GRAVE)   &kp LS(N9)    &kp LS(SQT)  &kp LS(SEMI)    &kp LS(N0)
+&none   &kp LS(GRAVE)  &kp LS(N5)  &kp LS(N7)  &none      &kp MINUS             &kp BSLH        &kp LBKT      &kp LS(N4)   &kp LS(FSLH)    &kp RBKT    &none
+                                   &none       &kp LSHFT  &none                 &none           &none         &none>;
         };
 
         spaces {
