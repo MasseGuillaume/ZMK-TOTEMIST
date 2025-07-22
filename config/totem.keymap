@@ -1,6 +1,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define NAV 1
+#define SYM 2
+#define SPA 3
+#define NUM 4
+
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
@@ -27,11 +32,30 @@
                          +-----+-----+-----+      +-----+-----+-----+
 */
             bindings = <
-       &none       &none       &kp ESCAPE  &kp Y       &none           &kp F      &kp G       &kp C       &kp R       &kp L
-       &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H      &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
-&none  &kp TAB     &kp Q       &kp J       &kp K       &kp X           &kp B      &kp M       &kp W       &kp V       &kp Z       &none
-                               &none       &none       &kp BSPC        &kp ENTER  &kp SPACE   &none
+       &none       &none       &kp ESCAPE  &kp Y       &none           &kp F          &kp G           &kp C       &kp R       &kp L
+       &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H          &mt RSHFT N     &mt RCTRL E &mt RALT I  &mt RGUI O
+&none  &kp TAB     &kp Q       &kp J       &kp K       &kp X           &kp B          &kp M           &kp W       &kp V       &kp Z       &none
+                               &none       &kp BSPC    &mo SPA         &lt NAV ENTER  &lt SYM SPACE   &mo NUM
             >;
+        };
+
+        nav {
+/*
+             +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
+             |     |     |     |     |     |      |     |     |     |     |     |
+             +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
+             | HME | PUP | PDN | END | ALT |      |     |  ←  |  ↑  |  ↓  |  →  |
+             +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
+             |     |     |     |     |     |      |  << |  ▸  |  )  | ))) |  >> |
+             +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
+                         |  _  | SFT |  _  |      |  _  |  _  |  _  |
+                         +-----+-----+-----+      +-----+-----+-----+
+*/
+            bindings = <
+       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
+       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
+&none  &none       &none       &none       &none       &none           &none      &none       &none       &none       &none       &none
+                               &none       &none       &none           &none      &none       &none            >;
         };
 
         symbols {
@@ -66,10 +90,10 @@
                          +-----+-----+-----+      +-----+-----+-----+
 */
             bindings = <
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
-                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
+       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
+       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
+&none  &none       &none       &none       &none       &none           &none      &none       &none       &none       &none       &none
+                               &none       &none       &none           &none      &none       &none            >;
         };
 
         numbers {
@@ -85,10 +109,10 @@
                          +-----+-----+-----+      +-----+-----+-----+
 */
                     bindings = <
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-       &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A
-&none  &kp A       &kp A       &kp A       &kp A       &kp A           &kp A      &kp A       &kp A       &kp A       &kp A       &none
-                               &kp A       &kp A       &kp A           &kp A      &kp A       &kp A            >;
+       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
+       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
+&none  &none       &none       &none       &none       &none           &none      &none       &none       &none       &none       &none
+                               &none       &none       &none           &none      &none       &none            >;
         };
     };
 };
