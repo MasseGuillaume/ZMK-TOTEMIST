@@ -55,10 +55,10 @@
 */
 
             bindings = <
-       &none     &none        &none          &none           &none           &none           &none       &none         &none         &none
-       &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END         &kp LEFT_ALT    &none           &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
-&none  &none     &none        &none          &none           &none           &kp K_PREVIOUS  &kp C_PLAY  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_NEXT  &none
-                              &none          &kp LEFT_SHIFT  &none           &none           &none       &none
+       &none     &none        &none          &none           &none               &none           &none       &none         &none         &none
+       &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END         &kp LEFT_ALT        &none           &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
+&none  &none     &none        &none          &none           &none               &kp K_PREVIOUS  &kp C_PLAY  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_NEXT  &none
+                              &none          &kp LEFT_SHIFT  &none               &none           &none       &none
             >;
         };
 
@@ -76,10 +76,10 @@
 */
 
             bindings = <
-       &kp LS(N6)     &kp LS(N5)  &kp LS(N8)  &kp LS(N2)  &kp LS(MINUS)    &kp FSLH       &kp LS(LBKT)  &kp SQT      &kp GRAVE     &kp LS(RBKT)
-       &kp LS(N3)     &kp LS(N1)  &kp COMMA   &kp DOT     &kp EQUAL        &kp LS(GRAVE)  &kp LS(N9)    &kp LS(SQT)  &kp LS(SEMI)  &kp LS(N0)
-&none  &kp LS(GRAVE)  &kp LS(N5)  &kp LS(N7)  &none       &kp MINUS        &kp BSLH       &kp LBKT      &kp LS(N4)   &kp LS(FSLH)  &kp RBKT      &none
-                                  &none       &kp LSHFT   &none            &none          &none         &none
+       &kp LS(N6)     &kp LS(N5)  &kp LS(N8)  &kp LS(N2)  &kp LS(MINUS)          &kp FSLH     &kp LS(LBKT)  &kp SQT      &kp GRAVE     &kp LS(RBKT)
+       &kp LS(N3)     &kp LS(N1)  &kp COMMA   &kp DOT     &kp EQUAL              &kp LS(BSLH) &kp LS(N9)    &kp LS(SQT)  &kp LS(SEMI)  &kp LS(N0)
+&none  &kp LS(GRAVE)  &kp LS(N5)  &kp LS(N7)  &none       &kp MINUS              &kp BSLH     &kp LBKT      &kp LS(N4)   &kp LS(FSLH)  &kp RBKT      &none
+                                  &none       &kp LSHFT   &none                  &none        &none         &none
             >;
         };
 
@@ -97,10 +97,10 @@
 */
 
             bindings = <
-       &kp F2      &kp F12     &kp F3      &kp LC(N0)  &kp PRINTSCREEN    &kp LG(EQUAL)  &kp RG(SPACE)    &kp RA(C)  &kp RA(R)  &kp A
-       &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)         &kp RG(N0)     &kp RA(H)        &kp RA(T)  &kp RA(N)  &kp RA(C)
-&none  &kp F10     &kp F11     &kp F5      &kp LA(N6)  &kp LA(N7)         &kp RG(MINUS)  &kp RA(SPACE)    &none      &none      &none      &none
-                               &none       &kp LSHFT   &none              &none          &kp RIGHT_SHIFT  &none
+       &kp F2      &kp F12     &kp F3      &kp LC(N0)  &kp PRINTSCREEN           &kp LG(EQUAL)  &kp RG(SPACE)    &kp RA(C)  &kp RA(R)  &kp A
+       &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)                &kp RG(N0)     &kp RA(H)        &kp RA(T)  &kp RA(N)  &kp RA(C)
+&none  &kp F10     &kp F11     &kp F5      &kp LA(N6)  &kp LA(N7)                &kp RG(MINUS)  &kp RA(SPACE)    &none      &none      &none      &none
+                               &none       &kp LSHFT   &none                     &none          &kp RIGHT_SHIFT  &none
             >;
         };
 
