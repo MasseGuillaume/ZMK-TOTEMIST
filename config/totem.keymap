@@ -46,7 +46,7 @@
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     |     |     |     |      |     |     |     |     |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
-             | HME | PUP | PDN | END | ALT |      |     |  ←  |  ↑  |  ↓  |  →  |
+             | HME | PUP | PDN | END | ALT |      |     |  ←  |  ↓  |  ↑  |  →  |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     |     |     |     |      |  << |  ▸  |  )  | ))) |  >> |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -56,7 +56,7 @@
 
             bindings = <
        &none     &none        &none          &none           &none           &none           &none       &none         &none         &none
-       &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END         &kp LEFT_ALT    &none           &kp LEFT    &kp UP_ARROW  &kp DOWN      &kp RIGHT
+       &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END         &kp LEFT_ALT    &none           &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
 &none  &none     &none        &none          &none           &none           &kp K_PREVIOUS  &kp C_PLAY  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_NEXT  &none
                               &none          &kp LEFT_SHIFT  &none           &none           &none       &none
             >;
