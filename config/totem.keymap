@@ -18,7 +18,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
-/*
+            /*
 
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     | ESC |  p  |  y  |      |  f  |  g  |  c  |  r  |  l  |
@@ -31,16 +31,17 @@
                          |     | BSP | SPA |      | ENT | _|$ |  #  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+
             bindings = <
-       &none       &none       &kp ESCAPE  &kp Y       &none           &kp F          &kp G           &kp C       &kp R       &kp L
-       &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H          &mt RSHFT N     &mt RCTRL E &mt RALT I  &mt RGUI O
-&none  &kp TAB     &kp Q       &kp J       &kp K       &kp X           &kp B          &kp M           &kp W       &kp V       &kp Z       &none
-                               &none       &kp BSPC    &mo SPA         &lt NAV ENTER  &lt SYM SPACE   &mo NUM
+       &none       &none       &kp ESCAPE   &kp Y        &none      &kp F          &kp G          &kp C        &kp R       &kp L
+       &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp D      &kp H          &mt RSHFT N    &mt RCTRL E  &mt RALT I  &mt RGUI O
+&none  &kp TAB     &kp Q       &kp J        &kp K        &kp X      &kp B          &kp M          &kp W        &kp V       &kp Z       &none
+                               &none        &kp BSPC     &mo SPA    &lt NAV ENTER  &lt SYM SPACE  &mo NUM
             >;
         };
 
         nav {
-/*
+            /*
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     |     |     |     |      |     |     |     |     |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -51,15 +52,17 @@
                          |  _  | SFT |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+
             bindings = <
-       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
-       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
-&none  &none       &none       &none       &none       &none           &none      &none       &none       &none       &none       &none
-                               &none       &none       &none           &none      &none       &none            >;
+       &none     &none        &none          &none           &none           &none           &none       &none         &none         &none
+       &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END         &kp LEFT_ALT    &none           &kp LEFT    &kp UP_ARROW  &kp DOWN      &kp RIGHT
+&none  &none     &none        &none          &none           &none           &kp K_PREVIOUS  &kp C_PLAY  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_NEXT  &none
+                              &none          &kp LEFT_SHIFT  &none           &none           &none       &none
+            >;
         };
 
         symbols {
-/*
+            /*
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |  ;  |  %  |  *  |  @  |  -  |      |  /  |  {  |  '  |  `  |  }  |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -70,15 +73,17 @@
                          |  _  | SFT |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+
             bindings = <
-        &kp LS(N6)     &kp LS(N5)  &kp LS(N8)  &kp LS(N2) &kp LS(MINUS)         &kp FSLH        &kp LS(LBKT)  &kp SQT      &kp GRAVE       &kp LS(RBKT)
-        &kp LS(N3)     &kp LS(N1)  &kp COMMA   &kp DOT    &kp EQUAL             &kp LS(GRAVE)   &kp LS(N9)    &kp LS(SQT)  &kp LS(SEMI)    &kp LS(N0)
-&none   &kp LS(GRAVE)  &kp LS(N5)  &kp LS(N7)  &none      &kp MINUS             &kp BSLH        &kp LBKT      &kp LS(N4)   &kp LS(FSLH)    &kp RBKT    &none
-                                   &none       &kp LSHFT  &none                 &none           &none         &none>;
+       &kp LS(N6)     &kp LS(N5)  &kp LS(N8)  &kp LS(N2)  &kp LS(MINUS)    &kp FSLH       &kp LS(LBKT)  &kp SQT      &kp GRAVE     &kp LS(RBKT)
+       &kp LS(N3)     &kp LS(N1)  &kp COMMA   &kp DOT     &kp EQUAL        &kp LS(GRAVE)  &kp LS(N9)    &kp LS(SQT)  &kp LS(SEMI)  &kp LS(N0)
+&none  &kp LS(GRAVE)  &kp LS(N5)  &kp LS(N7)  &none       &kp MINUS        &kp BSLH       &kp LBKT      &kp LS(N4)   &kp LS(FSLH)  &kp RBKT      &none
+                                  &none       &kp LSHFT   &none            &none          &none         &none
+            >;
         };
 
         spaces {
-        /*
+            /*
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |  F2 | F12 | F3  | CT0 |PRINT|      | ZIN | RUN | ←[  |  ]→ |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -89,15 +94,17 @@
                          |  _  | SFT |  _  |      |  _  | SFT |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
+
             bindings = <
-       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
-       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
-&none  &none       &none       &none       &none       &none           &none      &none       &none       &none       &none       &none
-                               &none       &none       &none           &none      &none       &none            >;
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
+            >;
         };
 
         numbers {
-        /*
+            /*
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     |     |     |     |      |     |     |     |     |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -108,11 +115,13 @@
                          |  _  |  _  |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
-                    bindings = <
-       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
-       &none       &none       &none       &none       &none           &none      &none       &none       &none       &none
-&none  &none       &none       &none       &none       &none           &none      &none       &none       &none       &none       &none
-                               &none       &none       &none           &none      &none       &none            >;
+
+            bindings = <
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &kp A  &kp A  &kp A  &kp A  &kp A    &kp A  &kp A  &kp A  &kp A  &kp A
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
+            >;
         };
     };
 };
