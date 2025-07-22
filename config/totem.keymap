@@ -23,7 +23,7 @@
 
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |     |     | ESC |  p  |  y  |      |  f  |  g  |  c  |  r  |  l  |
-             +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
+             +-----+-- ---+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |  a  |  o  |  e  |  u  |  i  |      |  d  |  h  |  t  |  n  |  s  |
              | CTR | NAV | CMD | SFT | ALT |      | ALT | SFT | CMD | NAV | CTR |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
@@ -34,9 +34,9 @@
 */
 
             bindings = <
-       &none       &none       &kp ESCAPE   &kp P        &kp Y                   &kp F          &kp G          &kp C        &kp R       &kp L
-       &mt LGUI A  &mt LALT O  &mt LCTRL E  &mt LSHFT U  &kp I                   &kp D          &mt RSHFT H    &mt RCTRL T  &mt RALT N  &mt RGUI S
-&none  &kp TAB     &kp Q       &kp J        &kp K        &kp X                   &kp B          &kp M          &kp W        &kp V       &kp Z       &none
+       &none        &none       &kp ESCAPE  &kp P        &kp Y                   &kp F          &kp G          &kp C       &kp R       &kp L
+       &mt LCTRL A  &mt LALT O  &mt LGUI E  &mt LSHFT U  &kp I                   &kp D          &mt RSHFT H    &mt RGUI T  &mt RALT N  &mt RCTRL S
+&none  &kp TAB      &kp Q       &kp J       &kp K        &kp X                   &kp B          &kp M          &kp W       &kp V       &kp Z       &none
                                &none        &kp BSPC     &mo SPA                 &lt NAV ENTER  &lt SYM SPACE  &mo NUM
             >;
         };
