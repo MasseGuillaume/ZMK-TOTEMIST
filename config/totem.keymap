@@ -80,7 +80,7 @@
             bindings = <
        &none     &kp PERCENT  &kp STAR  &kp AT      &kp MINUS     &none        &none        &none        &none        &none
        &kp HASH  &kp EXCL     &kp COMMA &kp DOT     &kp EQUAL     &kp BR_PIPE  &kp LPAR     &kp BR_DQUO  &kp BR_COLN  &kp RPAR
-&none  &none     &none        &kp AMPS  &kp BR_SCLN &kp UNDER     &kp BR_BSLS  &kp BR_LBKT  &kp DOLLAR   &kp BR_QUES  &kp RBKT    &none
+&none  &none     &none        &kp AMPS  &kp BR_SCLN &kp UNDER     &none        &none        &none        &none        &none
                               &none     &none       &none         &none        &none        &none
             >;
         };
