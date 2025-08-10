@@ -12,7 +12,7 @@
 #define BR_CIRC LS(BR_TILD)   // ^ (dead)
 #define BR_BSLS NUBS          // backslash
 #define BR_PIPE LS(BR_BSLS)   // |
-#define BR_SLSH KC_INT1       // forward slash
+#define BR_SLSH INT1          // forward slash
 #define BR_QUES LS(BR_SLSH)   // ?
 #define BR_SCLN SLASH         // / -> ;
 #define BR_COLN LS(BR_SCLN)   // ? -> :
