@@ -5,7 +5,7 @@
 #define BR_GRV  LS(BR_ACUT)   // ` (dead)
 #define BR_LBKT RIGHT_BRACKET // ] -> [
 #define BR_LCBR LS(BR_LBKT)   // {
-#define BR_RBRC BACKSLASH     // | -> ]
+#define BR_RBKT BACKSLASH     // | -> ]
 #define BR_RCBR LS(BR_RBRC)   // }
 #define BR_CCED SEMICOLON     // ; -> Ç
 #define BR_TILD SINGLE_QUOTE  // ' -> ~ (dead)
