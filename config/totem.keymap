@@ -109,21 +109,21 @@
         numbers {
             /*
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
-             |boot |studi|     |     |     |      |     |     |     |studi| boot|
+             |     |     |     |     |     |      |     |     |     |     |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
              |  7  |  5  |  3  |  1  |  9  |      |  8  |  0  |  2  |  4  |  6  |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
-             |     | bt0 | bt1 |bclr |     |      |     |     |     |     |     |
+             |     |     |     |     |     |      |     |     |     |     |     |
              +-----+-----+-----+-----+-----+      +-----+-----+-----+-----+-----+
                          |  _  |  _  |  _  |      |  _  |  _  |  _  |
                          +-----+-----+-----+      +-----+-----+-----+
 */
 
             bindings = <
-        &bootloader   &studio_unlock  &none           &none   &none              &none   &none   &none   &studio_unlock  &bootloader
-        &kp N7        &kp N5          &kp N3          &kp N1  &kp N9             &kp N8  &kp N0  &kp N2  &kp N4          &kp N6
-&none   &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR_ALL  &none   &none              &none   &none   &none   &none           &none        &none
-                                      &none           &none   &none              &none   &none   &none
+        &none   &none    &none   &none   &none        &none   &none   &none   &none &none
+        &kp N7  &kp N5   &kp N3  &kp N1  &kp N9       &kp N8  &kp N0  &kp N2  &kp N4          &kp N6
+&none   &none   &none    &none   &none   &none        &none   &none   &none   &none           &none        &none
+                         &none   &none   &none        &none   &none   &none
             >;
         };
 
